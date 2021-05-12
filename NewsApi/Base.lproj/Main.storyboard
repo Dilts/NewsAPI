@@ -93,10 +93,15 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="nUR-5b-2Pn">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kjx-sh-VJe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nUR-5b-2Pn" firstAttribute="centerX" secondItem="UEa-j2-OQf" secondAttribute="centerX" id="6GS-eQ-fax"/>
+                            <constraint firstItem="nUR-5b-2Pn" firstAttribute="centerY" secondItem="UEa-j2-OQf" secondAttribute="centerY" id="992-VH-EDh"/>
                             <constraint firstAttribute="bottom" secondItem="BUo-40-NcH" secondAttribute="bottom" id="OhC-Xb-9qm"/>
                             <constraint firstItem="BUo-40-NcH" firstAttribute="leading" secondItem="UEa-j2-OQf" secondAttribute="leading" id="Uuh-xZ-0fx"/>
                             <constraint firstAttribute="trailing" secondItem="BUo-40-NcH" secondAttribute="trailing" id="iOk-Ar-9aN"/>
@@ -105,6 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ca8-14-cQJ"/>
                     <connections>
+                        <outlet property="spinner" destination="nUR-5b-2Pn" id="ye7-kk-XBB"/>
                         <outlet property="webView" destination="BUo-40-NcH" id="QQ7-2h-YSS"/>
                     </connections>
                 </viewController>
