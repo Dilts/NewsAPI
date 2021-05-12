@@ -28,6 +28,26 @@ class ViewController: UIViewController {
         model.getArticles()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Detect the index path the user selected
+        let indexPath = tableView.indexPathForSelectedRow
+        
+        guard indexPath != nil else {
+            // The user hasn't selected anything
+            return
+        }
+        
+        // Get the article the user tapped on
+        let article = articles[indexPath!.row]
+        
+        // Get a reference to the detail view controller
+        let detailVC = segue.destination as! DetailViewController
+        
+        // Pass the article url to the deatail view controller
+        detailVC.articleUrl = article.url!
+    }
+    
     
 }
 
@@ -40,9 +60,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Get a cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as! ArticleCell
         
-        // TODO: Customize it
+        // Get the article that the tableView is asking for
+        let article = articles[indexPath.row]
+        
+        // Customize it
+        cell.displayArticle(article)
         
         // Return the cell
         return cell
