@@ -20,35 +20,35 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="ZgA-No-2ue" userLabel="ArticleCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="100" id="jbl-Ai-Hrb">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZgA-No-2ue" id="e0q-WT-iDC">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jbl-Ai-Hrb" id="dLz-fL-inc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-8n-ep4">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ey-dY-oAB">
+                                                    <rect key="frame" x="290" y="0.0" width="124" height="100"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10s-wL-zJQ">
                                                     <rect key="frame" x="20" y="20" width="250" height="60"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-1Y-7HX">
-                                                    <rect key="frame" x="290" y="0.0" width="124" height="100"/>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cd9-1Y-7HX" secondAttribute="trailing" id="G0F-CW-tRV"/>
-                                                <constraint firstItem="5qe-8n-ep4" firstAttribute="top" secondItem="e0q-WT-iDC" secondAttribute="top" constant="20" id="elZ-oe-RSt"/>
-                                                <constraint firstItem="cd9-1Y-7HX" firstAttribute="top" secondItem="e0q-WT-iDC" secondAttribute="top" id="hVW-jE-JVy"/>
-                                                <constraint firstAttribute="bottom" secondItem="cd9-1Y-7HX" secondAttribute="bottom" id="lDQ-Bu-z4h"/>
-                                                <constraint firstAttribute="bottom" secondItem="5qe-8n-ep4" secondAttribute="bottom" constant="20" id="p3R-2C-kXR"/>
-                                                <constraint firstItem="5qe-8n-ep4" firstAttribute="leading" secondItem="e0q-WT-iDC" secondAttribute="leading" constant="20" id="uvj-hD-q7j"/>
+                                                <constraint firstAttribute="bottom" secondItem="6ey-dY-oAB" secondAttribute="bottom" id="BMC-7A-Syq"/>
+                                                <constraint firstAttribute="bottom" secondItem="10s-wL-zJQ" secondAttribute="bottom" constant="20" id="Lyq-T9-R4C"/>
+                                                <constraint firstItem="6ey-dY-oAB" firstAttribute="top" secondItem="dLz-fL-inc" secondAttribute="top" id="Miq-eb-jrA"/>
+                                                <constraint firstAttribute="trailing" secondItem="6ey-dY-oAB" secondAttribute="trailing" id="Zjf-30-lu1"/>
+                                                <constraint firstItem="10s-wL-zJQ" firstAttribute="top" secondItem="dLz-fL-inc" secondAttribute="top" constant="20" id="eSN-2l-KQz"/>
+                                                <constraint firstItem="10s-wL-zJQ" firstAttribute="leading" secondItem="dLz-fL-inc" secondAttribute="leading" constant="20" id="vVq-eW-QPk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="cd9-1Y-7HX" firstAttribute="width" secondItem="ZgA-No-2ue" secondAttribute="width" multiplier="0.3" id="PyX-s1-up4"/>
-                                            <constraint firstItem="5qe-8n-ep4" firstAttribute="width" secondItem="ZgA-No-2ue" secondAttribute="width" multiplier="0.7" constant="-40" id="yJf-o1-pXz"/>
+                                            <constraint firstItem="6ey-dY-oAB" firstAttribute="width" secondItem="jbl-Ai-Hrb" secondAttribute="width" multiplier="0.3" id="9CP-np-08Q"/>
+                                            <constraint firstItem="10s-wL-zJQ" firstAttribute="width" secondItem="jbl-Ai-Hrb" secondAttribute="width" multiplier="0.7" constant="-40" id="HXQ-0K-18B"/>
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,6 +63,9 @@
                             <constraint firstItem="l3G-0l-tRp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fvt-uv-RnE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="l3G-0l-tRp" id="j5n-8Y-oRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +97,9 @@
                             <constraint firstItem="BUo-40-NcH" firstAttribute="top" secondItem="UEa-j2-OQf" secondAttribute="top" id="yJY-lH-XhF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="BUo-40-NcH" id="QQ7-2h-YSS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAf-kS-FIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

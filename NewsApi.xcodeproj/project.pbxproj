@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		868D30F2264C6362002DDBF8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D30F1264C6362002DDBF8 /* ArticleCell.swift */; };
 		86B864CF264C4328002A3FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B864CE264C4328002A3FBE /* AppDelegate.swift */; };
 		86B864D1264C4328002A3FBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B864D0264C4328002A3FBE /* SceneDelegate.swift */; };
 		86B864D3264C4328002A3FBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B864D2264C4328002A3FBE /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		868D30F1264C6362002DDBF8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		86B864CB264C4328002A3FBE /* NewsApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B864CE264C4328002A3FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B864D0264C4328002A3FBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				86B864D7264C432B002A3FBE /* Assets.xcassets */,
 				86B864D9264C432B002A3FBE /* LaunchScreen.storyboard */,
 				86B864DC264C432B002A3FBE /* Info.plist */,
+				868D30F1264C6362002DDBF8 /* ArticleCell.swift */,
 			);
 			path = NewsApi;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868D30F2264C6362002DDBF8 /* ArticleCell.swift in Sources */,
 				86B864E7264C44C6002A3FBE /* ArticleService.swift in Sources */,
 				86B864E4264C4359002A3FBE /* Article.swift in Sources */,
 				86B864D3264C4328002A3FBE /* ViewController.swift in Sources */,
