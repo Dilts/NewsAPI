@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArticleService {
+struct ArticleService: Decodable {
     
     var totalResults:Int?
     var articles:[Article]?
