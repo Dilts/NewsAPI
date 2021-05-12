@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, ArticleModelProtocol {
+class ViewController: UIViewController {
 
     var model = ArticleModel()
     
@@ -18,7 +18,12 @@ class ViewController: UIViewController, ArticleModelProtocol {
         model.delegate = self
         model.getArticles()
     }
+    
+    
+}
 
+extension ViewController: ArticleModelProtocol {
+    
     //MARK: - Article Model Protocol Methods
     
     func articlesRetrieved(_ articles: [Article]) {
@@ -27,4 +32,3 @@ class ViewController: UIViewController, ArticleModelProtocol {
     
     
 }
-
